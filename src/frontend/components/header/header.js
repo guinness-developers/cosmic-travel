@@ -13,7 +13,10 @@ class Header extends Component {
                 <nav className='nav'>
                     <a href='https://www.google.com/' 
                         target="_blank"
-                        rel='noopener noreferrer'>Log In</a>
+                        rel='noopener noreferrer'
+                    >
+                        Log In
+                    </a>
                 </nav>
             </div>
           </div>
