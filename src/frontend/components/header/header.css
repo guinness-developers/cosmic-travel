@@ -1,0 +1,33 @@
+.header {
+    width: 100%;
+    height: 9vh;
+    background-color: #000;
+    position: fixed;
+}
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+    height: inherit;
+}
+
+.logo {
+    color: #fff;
+    font-size: 38px;
+    font-weight: 700;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.nav-bar {
+    height: inherit;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 22px;
+}
