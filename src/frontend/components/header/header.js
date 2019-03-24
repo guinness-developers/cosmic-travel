@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './header.css';
+import './header.sass';
 
 class Header extends Component {
   render() {
@@ -11,7 +11,7 @@ class Header extends Component {
                     cosmic
                 </div>
                 <nav className='nav'>
-                    <a href='https://www.google.com/' 
+                    <a href='https://www.google.com/'
                         target="_blank"
                         rel='noopener noreferrer'
                     >

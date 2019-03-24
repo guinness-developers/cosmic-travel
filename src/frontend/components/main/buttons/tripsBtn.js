@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import { withStyles } from '@material-ui/core/styles';
 import Button from '@material-ui/core/Button';
 import purple from '@material-ui/core/colors/purple';
+import classNames from 'classnames';
 
 const styles = theme => ({
   button: {
@@ -59,7 +60,7 @@ function TripsButton(props) {
   const { classes } = props;
   return (
     <div>
-      <Button variant="contained" href="#contained-buttons" className={classes.margin, classes.cssRoot}>
+      <Button variant="contained" href="#contained-buttons" className={classNames(classes.margin, classes.cssRoot)}>
         Choose Trip
       </Button>
     </div>

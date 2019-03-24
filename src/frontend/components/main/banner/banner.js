@@ -1,26 +1,22 @@
-import React, { Component } from 'react';
-import './banner.css';
+import React from 'react';
+import './banner.sass';
 import TripsButton from '../buttons/tripsBtn';
 import RegisterButton from '../buttons/registerBtn';
 
 
-class Banner extends Component {
-  render() {
+export default function Banner(props) {
     return (
       <section className="banner">
         <div className="container">
           <div className="banner-content">
-              <h1 className="intro">Explore the solar<br /> system with us</h1>
-              <h4 className="intro">We take you to the planets in our <br />solar system, offering you once in a <br />lifetime experiences that you will <br />never forget.</h4>
+              <h1 className="intro intro-title">{props.introTitle}</h1>
+              <h4 className="intro intro-paragraph">{props.introParagraph}</h4>
               <div className="buttons">
-              <TripsButton />
-              <RegisterButton />
+                <TripsButton />
+                <RegisterButton />
               </div>
           </div>
         </div>
       </section>
     );
-  }
 }
-
-export default Banner;
