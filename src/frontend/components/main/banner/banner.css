@@ -1,0 +1,26 @@
+.banner {
+  padding-top: 9vh;
+  height: 100vh;
+  background-image: url("../../../images/banner.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: row;
+}
+
+h1, h4 {
+  color: white;
+}
+
+h1 {
+  font-size: 60px;
+}
+
+h4 {
+  font-size: 30px;
+  font-weight: 400;
+}
