@@ -1,17 +1,17 @@
 .banner
   padding-top: 9vh
   height: 100vh
-  background-image: url("../../../images/banner.jpg")
-  background-repeat: no-repeat
-  background-size: cover
-  background-position: center
 
   .container
     max-width: 1140px
     margin: 0 auto
     height: inherit
 
-    .banner-content
+    .banner-wrapper
+      display: flex
+      justify-content: space-around
+
+    .content-left
       width: 50%
 
       .intro
@@ -19,7 +19,7 @@
 
       .intro-title
         font-size: 60px
-      
+
       .intro-paragraph
         font-size: 30px
         font-weight: 400
@@ -27,3 +27,7 @@
       .buttons
         display: flex
         flex-direction: row
+
+    .content-right
+      img
+        width: 100%
