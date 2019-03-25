@@ -15,15 +15,16 @@ const styles = theme => ({
   cssRoot: {
     color: theme.palette.getContrastText(purple[500]),
     backgroundColor: purple[500],
-    margin: '8px',
+    marginRight: 50,
+    width: '150px',
+    height: '60px',
+    fontSize: 18,
     '&:hover': {
       backgroundColor: purple[700],
     },
   },
   bootstrapRoot: {
     boxShadow: 'none',
-    textTransform: 'none',
-    fontSize: 16,
     padding: '6px 12px',
     border: '1px solid',
     lineHeight: 1.5,
