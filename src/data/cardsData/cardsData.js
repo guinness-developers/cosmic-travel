@@ -1,32 +1,53 @@
 import marsImage from './productsImages/mars.jpg';
-import cartonImg from './dataImg/carton.png';
-import buildImg from './dataImg/part.png';
-import teslaImg from './dataImg/tesla.png';
+import earthImage from './dataImg/carton.png';
+import moonImage from './dataImg/part.png';
+import venusImage from './dataImg/tesla.png';
+import asteroidImage from './dataImg/tesla.png';
+import ceresImage from './dataImg/tesla.png';
+import saturnImage from './dataImg/tesla.png';
+import jupiterImage from './dataImg/tesla.png';
 
-let Portfolio = [
+let Destinations = [
+  {
+    tripTitle: 'Trip around Earth',
+    image: earthImage,
+    description: 'I build that APP on Kodiri boot camp, that app is was team app.'
+  },
+  {
+    tripTitle: 'Trip to the Moon',
+    image: moonImage,
+    description: 'I build that APP on Kodiri boot camp, that app is was team app.'
+  },
   {
     tripTitle: 'Trip to Mars',
     image: marsImage,
     description: 'I build that APP on Kodiri boot camp, that app is was team app.'
   },
   {
-    name: 'carton plant',
-    link: 'https://daniel-bevziuc.github.io/carton-plant/',
-    img: cartonImg,
-    description: 'I build that app for cardboard plant',
+    tripTitle: 'Trip to Venus',
+    image: venusImage,
+    description: 'I build that APP on Kodiri boot camp, that app is was team app.'
   },
   {
-    name: 'build part',
-    link: 'https://daniel-bevziuc.github.io/construction-part.github.io/',
-    img: buildImg,
-    description: 'I build that app for a build part company',
+    tripTitle: 'Trip to the Asteroid Belt',
+    image: asteroidImage,
+    description: 'I build that APP on Kodiri boot camp, that app is was team app.'
   },
   {
-    name: 'tesla',
-    linik: 'https://daniel-bevziuc.github.io/auto-agent-app/',
-    img: teslaImg,
-    descriptio: 'I build that app for auto agent'
+    tripTitle: 'Trip to Ceres',
+    image: ceresImage,
+    description: 'I build that APP on Kodiri boot camp, that app is was team app.'
+  },
+  {
+    tripTitle: 'Trip to Saturn',
+    image: saturnImage,
+    description: 'I build that APP on Kodiri boot camp, that app is was team app.'
+  },
+  {
+    tripTitle: 'Trip to Jupiter',
+    image: jupiterImage,
+    description: 'I build that APP on Kodiri boot camp, that app is was team app.'
   },
 ];
 
-export default Portfolio
+export default Destinations;
