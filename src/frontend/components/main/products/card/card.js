@@ -25,15 +25,15 @@ function MediaCard(props) {
       <CardActionArea>
         <CardMedia
           className={classes.media}
-          image={props.images}
-          title={props.title}
+          image={props.img}
+          title={props.theTitle}
         />
         <CardContent>
           <Typography gutterBottom variant="h5" component="h2">
-            {props.tripTitle}
+            {props.theTitle}
           </Typography>
           <Typography component="p">
-            {props.description}
+            {props.tripDescription}
           </Typography>
         </CardContent>
       </CardActionArea>

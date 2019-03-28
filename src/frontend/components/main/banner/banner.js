@@ -1,5 +1,5 @@
 import React from 'react';
-import './banner.sass';
+import '../../../App.sass';
 import TripsButton from '../buttons/tripsBtn';
 import RegisterButton from '../buttons/registerBtn';
 import shuttle from '../../../images/shuttle.png';
@@ -21,7 +21,7 @@ export default function Banner(props) {
             <div className="content-right">
               <img src={shuttle} alt="space shuttle" />
             </div>
-          </div> 
+          </div>
         </div>
       </section>
     );

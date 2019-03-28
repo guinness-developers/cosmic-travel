@@ -1,5 +1,5 @@
 import React, { Component, Fragment } from 'react';
-import './main.css';
+import '../../App.sass';
 import Banner from './banner/banner';
 import Products from './products/products';
 
