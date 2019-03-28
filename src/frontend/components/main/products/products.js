@@ -1,19 +1,30 @@
-import React from 'react';
-import './products.sass';
+import React, { Component } from 'react';
+import '../../../App.sass';
 import MediaCard from './card/card';
-import tripImage from './card/productImages/mars.jpg';
+import Destinations from '../../../../data/cardsData/cardsData';
 
 
-export default function Products(props) {
+class Products extends Component {
+  render() {
     return (
-      <section className="products">
-        <div className="">
-          <MediaCard
-            images={tripImage}
-            tripTitle="Trip to Mars"
-            description="Enjoy a 6 months round trip to the red planet"
-          />
+      <section className="products container">
+        <div className="products-layout">
+          {
+            Destinations.map((cards, index) => (
+              <div className="card-wrapper">
+                <MediaCard
+                  key={index}
+                  img={cards.image}
+                  theTitle={cards.tripTitle}
+                  tripDescription={cards.description}
+                />
+              </div>
+            ))
+          }
         </div>
       </section>
     );
+  }
 }
+
+export default Products;

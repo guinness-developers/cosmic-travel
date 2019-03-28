@@ -1,11 +1,11 @@
-import marsImage from './productsImages/mars.jpg';
-import earthImage from './dataImg/carton.png';
-import moonImage from './dataImg/part.png';
-import venusImage from './dataImg/tesla.png';
-import asteroidImage from './dataImg/tesla.png';
-import ceresImage from './dataImg/tesla.png';
-import saturnImage from './dataImg/tesla.png';
-import jupiterImage from './dataImg/tesla.png';
+import marsImage from './productImages/mars.jpg';
+import earthImage from './productImages/1.jpg';
+import moonImage from './productImages/2.jpg';
+import venusImage from './productImages/3.jpg';
+import asteroidImage from './productImages/4.jpg';
+import ceresImage from './productImages/5.jpg';
+import saturnImage from './productImages/8.jpg';
+import jupiterImage from './productImages/7.jpg';
 
 let Destinations = [
   {
@@ -47,7 +47,7 @@ let Destinations = [
     tripTitle: 'Trip to Jupiter',
     image: jupiterImage,
     description: 'I build that APP on Kodiri boot camp, that app is was team app.'
-  },
+  }
 ];
 
 export default Destinations;
