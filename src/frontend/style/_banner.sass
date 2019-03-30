@@ -1,6 +1,6 @@
 .banner
   padding-top: 9vh
-  height: 91vh
+  min-height: 91vh
 
   .banner-wrapper
     display: flex
@@ -25,6 +25,12 @@
 
     .content-right
       text-align: center
-      img
-        width: 80%
-        height: auto
+
+      img 
+        display: none
+
+      @media (min-width: 400)
+        img
+          display: block
+          width: 80%
+          height: auto

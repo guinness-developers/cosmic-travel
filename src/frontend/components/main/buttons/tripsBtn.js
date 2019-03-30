@@ -16,7 +16,7 @@ const styles = theme => ({
     color: theme.palette.getContrastText(purple[500]),
     backgroundColor: purple[500],
     marginRight: 50,
-    width: '150px',
+    width: '200px',
     height: '60px',
     fontSize: 18,
     '&:hover': {
