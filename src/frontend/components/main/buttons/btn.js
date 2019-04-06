@@ -4,6 +4,7 @@ import { withStyles } from '@material-ui/core/styles';
 import Button from '@material-ui/core/Button';
 import purple from '@material-ui/core/colors/purple';
 import classNames from 'classnames';
+import { Link } from 'react-router-dom';
 
 const styles = theme => ({
   button: {
@@ -15,7 +16,6 @@ const styles = theme => ({
   cssRoot: {
     color: theme.palette.getContrastText(purple[500]),
     backgroundColor: purple[500],
-    marginRight: 50,
     width: '200px',
     height: '60px',
     fontSize: 18,
@@ -25,6 +25,8 @@ const styles = theme => ({
   },
   bootstrapRoot: {
     boxShadow: 'none',
+    textTransform: 'none',
+    fontSize: '18px',
     padding: '6px 12px',
     border: '1px solid',
     lineHeight: 1.5,
@@ -57,19 +59,17 @@ const styles = theme => ({
   },
 });
 
-function TripsButton(props) {
+function CosmicButton(props) {
   const { classes } = props;
   return (
-    <div>
       <Button variant="contained" href="#contained-buttons" className={classNames(classes.margin, classes.cssRoot)}>
-        Choose Trip
+        {props.buttonName}
       </Button>
-    </div>
   );
 }
 
-TripsButton.propTypes = {
+CosmicButton.propTypes = {
   classes: PropTypes.object.isRequired,
 };
 
-export default withStyles(styles)(TripsButton);
+export default withStyles(styles)(CosmicButton);

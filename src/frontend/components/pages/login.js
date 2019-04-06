@@ -5,6 +5,7 @@ import { withStyles } from '@material-ui/core/styles';
 import MenuItem from '@material-ui/core/MenuItem';
 import TextField from '@material-ui/core/TextField';
 import CosmicButton from '../main/buttons/btn';
+import { Link } from 'react-router-dom';
 
 const styles = theme => ({
   container: {
@@ -26,16 +27,15 @@ const styles = theme => ({
   },
 });
 
-class Registration extends React.Component {
+class Login extends React.Component {
   state = {
-    firstName: 'First Name',
-    lastName: 'Last Name',
-    age: '',
+    username: 'username',
+    password: 'password',
   };
 
-  handleChange = name => event => {
+  handleChange = username => event => {
     this.setState({
-      [name]: event.target.value,
+      [username]: event.target.value,
     });
   };
 
@@ -46,47 +46,16 @@ class Registration extends React.Component {
     return (
       <form className={classes.container} noValidate autoComplete="off">
         <TextField
-          id="outlined-name"
-          label="Name"
+          required
+          id="outlined-required"
+          label="Username"
           className={classes.textField}
-          value={this.state.name}
-          onChange={this.handleChange('firstName')}
-          margin="normal"
-          variant="outlined"
-        />
-
-        <TextField
-          id="outlined-name"
-          label="Name"
-          className={classes.textField}
-          value={this.state.name}
-          onChange={this.handleChange('lastName')}
-          margin="normal"
-          variant="outlined"
-        />
-
-        <TextField
-          id="outlined-email-input"
-          label="Email"
-          className={classes.textField}
-          type="email"
-          name="email"
-          autoComplete="email"
           margin="normal"
           variant="outlined"
         />
 
         <TextField
           required
-          id="outlined-required"
-          label="Username"
-          defaultValue="username"
-          className={classes.textField}
-          margin="normal"
-          variant="outlined"
-        />
-
-        <TextField
           id="outlined-password-input"
           label="Password"
           className={classes.textField}
@@ -96,17 +65,18 @@ class Registration extends React.Component {
           variant="outlined"
         />
 
-        <CosmicButton
-            buttonName='Create account'
-         />
+        
+          <CosmicButton
+            buttonName='Login'
+          />
 
       </form>
     );
   }
 }
 
-Registration.propTypes = {
+Login.propTypes = {
   classes: PropTypes.object.isRequired,
 };
 
-export default withStyles(styles)(Registration);
+export default withStyles(styles)(Login);
