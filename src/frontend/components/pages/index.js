@@ -1,2 +1,2 @@
-export { default as App } from '../../App';
+export { default as Home } from './home';
 export { default as Details } from './details';
