@@ -7,7 +7,7 @@ import Destinations from '../../../../data/cardsData/cardsData';
 class Products extends Component {
   render() {
     return (
-      <section className="products container">
+      <section className="products container" id="products">
         <div className="products-layout">
           {
             Destinations.map((cards, index) => (

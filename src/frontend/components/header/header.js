@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 import '../../App.sass';
 
 class Header extends Component {
@@ -11,12 +12,7 @@ class Header extends Component {
                     cosmic
                 </div>
                 <nav className='nav'>
-                    <a href='https://www.google.com/'
-                        target="_blank"
-                        rel='noopener noreferrer'
-                    >
-                        Log In
-                    </a>
+                    <Link className="log-in" to='/login'>Log In</Link>
                 </nav>
             </div>
           </div>

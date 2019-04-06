@@ -1,8 +1,8 @@
 import React from 'react';
 import '../../../App.sass';
-import TripsButton from '../buttons/tripsBtn';
-import RegisterButton from '../buttons/registerBtn';
+import CosmicButton from '../buttons/btn';
 import shuttle from '../../../images/shuttle.png';
+import { Link } from 'react-router-dom';
 
 
 export default function Banner(props) {
@@ -14,8 +14,15 @@ export default function Banner(props) {
                 <h1 className="intro intro-title">{props.introTitle}</h1>
                 <h4 className="intro intro-paragraph">{props.introParagraph}</h4>
                 <div className="buttons">
-                  <TripsButton />
-                  <RegisterButton />
+                <CosmicButton
+                  buttonName='Choose trip'
+                 />
+                 
+                  <Link to="/registration">
+                    <CosmicButton
+                      buttonName='Register'
+                     />
+                  </Link>
                 </div>
             </div>
             <div className="content-right">
