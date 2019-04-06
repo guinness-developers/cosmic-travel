@@ -34,7 +34,7 @@ class OutlinedTextFields extends React.Component {
       [firstName]: event.target.value,
     });
   };
- 
+
 
   render() {
     const { classes } = this.props;
