@@ -20,7 +20,7 @@ const styles = theme => ({
     marginRight: theme.spacing.unit,
   },
   dense: {
-    marginTop: 16,
+    marginTop: 18,
   },
   menu: {
     width: 200,
