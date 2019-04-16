@@ -5,9 +5,9 @@
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
-    "server": "nodemon server.js",
+    "server": "nodemon server.js"
   },
-  "author": "",
+  "author": "Guiness Devs",
   "license": "MIT",
   "dependencies": {
     "bcryptjs": "^2.4.3",
