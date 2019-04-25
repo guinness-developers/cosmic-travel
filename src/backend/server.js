@@ -1,39 +1,29 @@
-const express = require("express");
-const mongoose = require("mongoose");
-const bodyParser = require("body-parser");
-const passport = require("passport");
-const users = require("./routesBackend/api/users");
+var express = require("express")
+var cors = require("cors")
+var bodyParser = require("body-parser")
+var app = express()
+var mongoose = require("mongoose")
+var port = process.env.PORT || 5000
 
-const app = express();
-
-// Bodyparser middleware
+app.use(bodyParser.json())
+app.use(cors())
 app.use(
-  bodyParser.urlencoded({
-    extended: false
-  })
-);
-app.use(bodyParser.json());
+    bodyParser.urlencoded({
+        extended: false
+    })
+)
 
-// DB Config
-const db = require("./config/keys").mongoURI;
+const mongoURI = 'mongodb://localhost:27017/cocojumbo'
 
-// Connect to MongoDB
 mongoose
-    .connect(
-    db,
-    { useNewUrlParser: true }
-  )
-  .then(() => console.log("YAY! MongoDB successfully connected"))
-  .catch(err => console.log(err));
+    .connect(mongoURI, { useNewUrlParser: true })
+    .then(() => console.log("MongoDB connected"))
+    .catch(err => console.log(err))
 
-// Passport middleware
-app.use(passport.initialize());
-// Passport config
-require("./config/passport")(passport);
-// Routes
-app.use("/api/users", users);
+var Users = require('./routes/Users')
 
-const port = process.env.PORT || 5000;
+app.use('/users', Users)
 
-// process.env.port is Heroku's port if you choose to deploy the app there
-app.listen(port, () => console.log(`The mighty server up and running on port ${port} !`));
+app.listen(port, () => {
+    console.log("Server is running on port: " + port)
+})
