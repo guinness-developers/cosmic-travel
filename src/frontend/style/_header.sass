@@ -10,6 +10,7 @@
         display: flex
         justify-content: space-between
         align-items: center
+        padding: 0 15px
 
         .logo
           color: #fff
@@ -22,3 +23,10 @@
             color: #fff
             text-decoration: none
             font-size: 22px
+
+        @media (max-width: 480px)
+          .logo
+            font-size: 25px
+
+          .nav a
+            font-size: 18px

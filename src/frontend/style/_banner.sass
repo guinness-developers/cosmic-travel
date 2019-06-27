@@ -8,16 +8,22 @@
 
     .content-left
       width: 50%
+      @media (max-width: 480px)
+        width: 100%
 
       .intro
         color: white
 
       .intro-title
         font-size: 60px
+        @media (max-width: 480px)
+          font-size: 30px
 
       .intro-paragraph
         font-size: 30px
         font-weight: 400
+        @media (max-width: 480px)
+          font-size: 20px
 
       .buttons
         display: flex
@@ -27,10 +33,8 @@
       text-align: center
 
       img
-        display: none
-
-      @media (min-width: 400px)
-        img
-          display: block
-          width: 80%
-          height: auto
+        display: block
+        width: 80%
+        height: auto
+        @media (max-width: 480px)
+          display: none

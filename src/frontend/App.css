@@ -1,0 +1,160 @@
+.banner {
+  padding-top: 9vh;
+  min-height: 91vh;
+}
+
+.banner .banner-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.banner .banner-wrapper .content-left {
+  width: 50%;
+}
+
+@media (max-width: 480px) {
+  .banner .banner-wrapper .content-left {
+    width: 100%;
+  }
+}
+
+.banner .banner-wrapper .content-left .intro {
+  color: white;
+}
+
+.banner .banner-wrapper .content-left .intro-title {
+  font-size: 60px;
+}
+
+@media (max-width: 480px) {
+  .banner .banner-wrapper .content-left .intro-title {
+    font-size: 30px;
+  }
+}
+
+.banner .banner-wrapper .content-left .intro-paragraph {
+  font-size: 30px;
+  font-weight: 400;
+}
+
+@media (max-width: 480px) {
+  .banner .banner-wrapper .content-left .intro-paragraph {
+    font-size: 20px;
+  }
+}
+
+.banner .banner-wrapper .content-left .buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.banner .banner-wrapper .content-right {
+  text-align: center;
+}
+
+.banner .banner-wrapper .content-right img {
+  display: block;
+  width: 80%;
+  height: auto;
+}
+
+@media (max-width: 480px) {
+  .banner .banner-wrapper .content-right img {
+    display: none;
+  }
+}
+
+.header {
+  width: 100%;
+  height: 9vh;
+  background-color: #000;
+  position: fixed;
+  z-index: 11;
+}
+
+.header .nav-bar {
+  height: inherit;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 15px;
+}
+
+.header .nav-bar .logo {
+  color: #fff;
+  font-size: 38px;
+  font-weight: 700;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.header .nav-bar .nav a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 22px;
+}
+
+@media (max-width: 480px) {
+  .header .nav-bar .logo {
+    font-size: 25px;
+  }
+  .header .nav-bar .nav a {
+    font-size: 18px;
+  }
+}
+
+.wrapper {
+  margin: 0 15px;
+}
+
+.products {
+  margin: 0 auto;
+}
+
+.products .products-layout {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(340px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+}
+
+.products .products-layout .card-wrapper .MuiPaper-root-41 {
+  margin: 10%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.App {
+  background-image: url("./images/banner1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.container {
+  max-width: 1240px;
+  margin: 0 auto;
+  height: 100%;
+}
+/*# sourceMappingURL=App.css.map */
