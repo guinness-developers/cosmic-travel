@@ -9,7 +9,7 @@ class Header extends Component {
           <div className='container'>
             <div className='nav-bar'>
                 <div className='logo'>
-                    cosmic
+                    cosmix
                 </div>
                 <nav className='nav'>
                     <Link className="log-in" to='/login'>Log In</Link>
